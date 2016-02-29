@@ -1,7 +1,11 @@
-=== Build
+## Build
 
+```bash
 docker build -t beardyjay/<name> . 
+```
 
-=== RUN
+## RUN
 
+```bash
 docker run --rm -it beardyjay/<name>
+```
