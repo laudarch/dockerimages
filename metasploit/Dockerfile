@@ -1,5 +1,5 @@
 FROM ruby:2.1.6
-MAINTAINER Jay Scott <jay@beardyjay.co.uk>
+MAINTAINER Beardyjay <jay@beardyjay.co.uk>
 
 WORKDIR /root
 RUN apt-get update
