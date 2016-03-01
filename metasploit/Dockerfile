@@ -1,6 +1,7 @@
 FROM ruby:2.1.7
 MAINTAINER Beardyjay <jay@beardyjay.co.uk>
 
+# install deps for metasploit
 WORKDIR /root
 RUN apt-get update && apt-get -y install \
   build-essential \
@@ -24,12 +25,14 @@ RUN apt-get update && apt-get -y install \
   libyaml-dev \
 && rm -rf /var/lib/apt/lists/*
 
-RUN git clone https://github.com/nmap/nmap.git
+# get latest nmap and metasploit
+RUN git clone https://github.com/nmap/nmap.git && git clone https://github.com/rapid7/metasploit-framework.git
+
+# build and install nmap
 WORKDIR /root/nmap
 RUN ./configure && make && make install && make clean
 
-WORKDIR /root
-RUN git clone https://github.com/rapid7/metasploit-framework.git
+# build Metasploit
 WORKDIR /root/metasploit-framework
 RUN bundle install
 
