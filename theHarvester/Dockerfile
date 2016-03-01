@@ -8,7 +8,7 @@ RUN apk add --update \
   py-pip \
   && rm -rf /var/cache/apk/*
 
-# Install dnsrecon from git along with deps 
+# Install theharvester from git along with deps 
 WORKDIR /usr/share
 RUN pip install requests && git clone https://github.com/laramies/theHarvester.git && chmod +x theHarvester/theHarvester.py
 
