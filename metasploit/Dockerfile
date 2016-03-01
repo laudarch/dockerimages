@@ -1,13 +1,30 @@
-FROM ruby:2.1.6
+FROM ruby:2.1.7
 MAINTAINER Beardyjay <jay@beardyjay.co.uk>
 
 WORKDIR /root
-RUN apt-get update
-RUN apt-get -y upgrade
+RUN apt-get update && apt-get -y install \
+  build-essential \
+  libreadline-dev \
+  libssl-dev \
+  libpq5 \
+  libpq-dev \
+  libreadline5 \
+  libsqlite3-dev \
+  libpcap-dev \
+  git-core \
+  autoconf \
+  curl \
+  zlib1g-dev \
+  zlib1g \ 
+  libxml2 \
+  libxml2-dev \
+  libxslt1-dev \
+  locate \
+  vncviewer \
+  libyaml-dev \
+&& rm -rf /var/lib/apt/lists/*
 
-RUN apt-get -y install build-essential libreadline-dev libssl-dev libpq5 libpq-dev libreadline5 libsqlite3-dev libpcap-dev openjdk-7-jre git-core autoconf curl zlib1g-dev libxml2-dev libxslt1-dev vncviewer libyaml-dev curl
-
-RUN svn co https://svn.nmap.org/nmap
+RUN git clone https://github.com/nmap/nmap.git
 WORKDIR /root/nmap
 RUN ./configure && make && make install && make clean
 
