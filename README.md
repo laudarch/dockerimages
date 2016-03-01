@@ -1,11 +1,5 @@
-## Build
+## Security Docker Images
 
-```bash
-docker build -t beardyjay/<name> . 
-```
+You can find the built images at [docker hub].
 
-## RUN
-
-```bash
-docker run --rm -it beardyjay/<name>
-```
+[docker hub]: <https://hub.docker.com/r/beardyjay/>
