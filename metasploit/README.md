@@ -1,6 +1,6 @@
 # Metasploit Framework
 
-Docker image for the latest version on Rapid7 metasploit framework. 
+Docker image for the latest version of the Rapid7 metasploit framework. 
 
   - metasploit from github master branch
   - nmap from github master branch (copy from SVN)
