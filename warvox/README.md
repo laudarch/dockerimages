@@ -5,6 +5,8 @@ This is based of the latest commit to master that I could get running(c25db67) w
 
 [Warvox repo]
 
+The default login for the WarVox web interface is admin/godsexlove ;-) 
+
 ## Running Warvox
 
 Pull the standard postgres image
