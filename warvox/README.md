@@ -1,7 +1,7 @@
 
 # Warvox
 
-This is based of the latest commit to master that I could get running(c25db67) which is dated Oct 23 2015. 
+Current master branch is missing a Gem (rkelly) so this is added to the Gemfile during the image build.
 
 [Warvox repo]
 
