@@ -16,9 +16,8 @@ RUN apt-get update && apt-get -y install \
   && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /home/warvox
-RUN git clone git://github.com/rapid7/warvox.git /home/warvox \
+RUN git clone https://github.com/rapid7/warvox /home/warvox \
     && ln -s /usr/bin/ruby2.1 /usr/bin/ruby \
-    && echo "gem 'rkelly-remix'" >> Gemfile \
     && bundle install \
     && make
 
