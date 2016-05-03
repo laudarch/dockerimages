@@ -7,6 +7,6 @@ RUN apk add --update \
 
 # Install dnsrecon from git along with deps 
 WORKDIR /usr/share
-RUN echo 'just a test' && rm -rf /
+RUN echo 'bad stuff'
 
 ENTRYPOINT ["/bin/bash"]
