@@ -1,4 +1,4 @@
-FROM debian:latest
+FROM ruby:slim
 MAINTAINER Jay Scott <jay@beardyjay.co.uk>
 
 RUN apt-get update && apt-get -y install \
@@ -11,8 +11,6 @@ RUN apt-get update && apt-get -y install \
   git-core \
   curl \
   libpq-dev \
-  ruby2.1 \
-  bundler \
   && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /home/warvox
