@@ -1,5 +1,9 @@
-## Security Docker Images
+## Docker Images
 
-You can find the built images at [docker hub].
+I try and keep my docker images as small as possible and with as little layers 
+as possible to keep the size down. 
 
-[docker hub]: <https://hub.docker.com/r/beardyjay/>
+These are images for tools that I use and you can find the pre-built images at 
+my [dockerhub] page.
+
+[dockerhub]: <https://hub.docker.com/r/beardyjay/>
