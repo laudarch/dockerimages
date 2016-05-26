@@ -1,17 +1,14 @@
-FROM alpine:3.2
+FROM alpine:3.3
 MAINTAINER Jay Scott <jay@beardyjay.co.uk>
 
-RUN apk update && apk upgrade && apk add \
+RUN apk add --update \
     ruby \
-    g++ \
-    musl-dev \
-    make \
     ruby-dev \
+    build-base \
     sqlite-dev \
-    bash \
+    && gem install mailcatcher -v 0.6.4 --no-ri --no-rdoc \
+    && apk del --purge ruby-dev build-base sqlite-dev \
     && rm -rf /var/cache/apk/*
-
-RUN gem install mailcatcher --no-ri --no-rdoc
 
 EXPOSE 1025
 EXPOSE 1080
