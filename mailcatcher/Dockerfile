@@ -4,10 +4,13 @@ MAINTAINER Jay Scott <jay@beardyjay.co.uk>
 RUN apk add --update \
     ruby \
     ruby-dev \
+    ruby-bigdecimal \
     build-base \
+    libstdc++ \
+    sqlite \
     sqlite-dev \
     && gem install mailcatcher -v 0.6.4 --no-ri --no-rdoc \
-    && apk del --purge ruby-dev build-base sqlite-dev \
+    && apk del --purge ruby-dev build-base \
     && rm -rf /var/cache/apk/*
 
 EXPOSE 1025
