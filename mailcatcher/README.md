@@ -1,7 +1,7 @@
 
 # Mailcatcher
 
-Super small 13MB image of the latest 0.6.4 release of [mailcatcher][1]. 
+Super small 13MB image of the latest 0.6.5 release of [mailcatcher][1]. 
 
 To run the image in the foreground and delete when stopped: 
 
