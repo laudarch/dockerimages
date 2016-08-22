@@ -1,6 +1,6 @@
 # dnsrecon
 
-Docker image for the latest version of [dnsrecon]. 
+Docker image for the latest (2343b7e) version of [dnsrecon]. 
 
 ## Pull
 
