@@ -24,4 +24,4 @@ RUN git clone https://github.com/segment-srl/htcap.git && \
   ln -s /usr/share/htcap/scripts/quickscan.sh /usr/local/bin/htcapquick
 
 WORKDIR /root
-ENTRYPOINT ["/bin/bash"]
+ENTRYPOINT ["htcap/htcap.py"]
