@@ -1,4 +1,4 @@
-FROM alpine:3.3
+FROM alpine:latest
 MAINTAINER Jay Scott <jay@beardyjay.co.uk>
 
 RUN apk add --update \
@@ -9,6 +9,7 @@ RUN apk add --update \
     libstdc++ \
     sqlite \
     sqlite-dev \
+    && gem install json --no-ri --no-rdoc \
     && gem install mailcatcher -v 0.6.5 --no-ri --no-rdoc \
     && apk del --purge ruby-dev build-base \
     && rm -rf /var/cache/apk/*
