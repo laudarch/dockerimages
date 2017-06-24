@@ -1,4 +1,4 @@
-FROM alpine:3.1
+FROM alpine:latest
 MAINTAINER Beardyjay <jay@beardyjay.co.uk>
 
 RUN apk add --update \
