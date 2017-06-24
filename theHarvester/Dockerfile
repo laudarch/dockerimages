@@ -1,5 +1,5 @@
 FROM alpine:latest
-MAINTAINER Beardyjay <jay@beardyjay.co.uk>
+MAINTAINER beardyjay <jay@beardyjay.co.uk>
 
 RUN apk add --update \
   bash \

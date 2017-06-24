@@ -1,5 +1,5 @@
 FROM debian:latest
-MAINTAINER Beardyjay <jay@beardyjay.co.uk>
+MAINTAINER beardyjay <jay@beardyjay.co.uk>
 
 WORKDIR /root
 RUN apt-get update && apt-get -y install \

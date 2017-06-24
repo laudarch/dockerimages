@@ -1,5 +1,5 @@
 FROM debian:jessie
-MAINTAINER Jay Scott <jay@beardyjay.co.uk>
+MAINTAINER beardyjay <jay@beardyjay.co.uk>
 
 RUN apt-get update && apt-get -y install \
   asterisk \
