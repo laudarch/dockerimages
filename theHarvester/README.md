@@ -14,4 +14,4 @@ Docker image for the latest version of [TheHarvester] from Edge Security.
 
 `docker run --rm -it beardyjay/theharvester`
 
-[TheHarvester]: <http://www.edge-security.com/theharvester.php>
+[TheHarvester]: <https://github.com/laramies/theHarvester>
