@@ -10,7 +10,7 @@ RUN apk add --update \
     sqlite \
     sqlite-dev \
     && gem install json --no-ri --no-rdoc \
-    && gem install mailcatcher -v 0.6.5 --no-ri --no-rdoc \
+    && gem install mailcatcher -v 0.7.0.beta1 --no-ri --no-rdoc \
     && apk del --purge ruby-dev build-base \
     && rm -rf /var/cache/apk/*
 
