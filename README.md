@@ -6,4 +6,6 @@ as possible to keep the size down.
 These are images for tools that I use and you can find the pre-built images at 
 my [dockerhub] page.
 
+Last updates: **Wed 25 Oct**
+
 [dockerhub]: <https://hub.docker.com/r/beardyjay/>
