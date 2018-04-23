@@ -30,5 +30,6 @@ sh -c "echo 'production:
 
 cd /home/warvox 
 make database
+cp /home/warvox/config/secrets.yml.example /home/warvox/config/secrets.yml
 bin/adduser admin godsexlove
 bin/warvox.rb --address 0.0.0.0
